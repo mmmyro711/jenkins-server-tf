@@ -3,6 +3,7 @@ resource "aws_security_group" "jenkins_security_group" {
   #Arguments 
   name        = "jenkins_sg_example"
   description = "Allow SSH and HTTP traffic"
+  vpc_id = "vpc-0674a85375cde1505"
 
   ingress {
     from_port   = 22
@@ -17,6 +18,13 @@ resource "aws_security_group" "jenkins_security_group" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+   ingress {
+    from_port   = 433
+    to_port     = 433
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
 
   ingress {
     from_port   = 80
