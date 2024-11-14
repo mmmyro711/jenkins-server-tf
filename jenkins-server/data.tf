@@ -14,6 +14,6 @@ data "aws_ami" "ubuntu" {
 # data "aws_route53_zone" "kloudgate_hosted_zone" {
 #   name = var.hosted_zone_name
 # }
-data "aws_route53_zone" "hosted_zone" {
-  name = var.hosted_zone_name
-}
+# data "aws_route53_zone" "hosted_zone" {
+#   name = var.hosted_zone_name
+# }

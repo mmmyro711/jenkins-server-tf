@@ -28,12 +28,12 @@ variable "instance_type" {
 }
 
 # Route53 Variables
-variable "hosted_zone_name" {
-  description = "Route53 Hosted Zone Name"
-  type        = string
-}
+# variable "hosted_zone_name" {
+#   description = "Route53 Hosted Zone Name"
+#   type        = string
+# }
 
-variable "a_record_name" {
-  description = "A Record Name"
-  type        = string
-}
+# variable "a_record_name" {
+#   description = "A Record Name"
+#   type        = string
+# }
